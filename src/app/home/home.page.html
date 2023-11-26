@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +12,30 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button [disabled]="true"> DES-HABILITADO </ion-button>
+    <ion-button ion-button color="primary"> Normal 1 </ion-button>
+    <ion-button color="success"> Normal 2 </ion-button>
+    <ion-button color="secondary" shape="round"> Redondo 1 </ion-button>
+    <ion-button color="warning" fill="outline"> Bordes </ion-button>
+    <br />
+    <ion-button>
+      <ion-icon color="tertiary" slot="start" name="star"></ion-icon>
+      L_Imagen
+    </ion-button>
+    <ion-button>
+      R_Imagen
+      <ion-icon color="danger" slot="end" name="star"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon color="light" slot="icon-only" name="star"></ion-icon>
+    </ion-button>
+    <br />
+    <ion-button color="medium" size="small"> Small </ion-button>
+    <br />
+    <ion-button color="dark" size="default"> Default </ion-button>
+    <br />
+    <ion-button ion-button color="primary" fill="clear" size="large">
+      Large
+    </ion-button>
   </div>
 </ion-content>
